@@ -6,34 +6,36 @@ import java.util.Scanner;
 
 public class ThemPhanTuVaoMang {
     public static void main(String[] args) {
-        int numbers,index,number;
+        int numbers;
+        int index;
+        int number;
         int arr[];
         Scanner scanner = new Scanner(System.in);
         do {
-            System.out.print("Enter nummbers of array: ");
+            System.out.print("nhập số lượng của mảng: ");
             numbers = scanner.nextInt();
             if (numbers < 1) {
-                System.out.println("numbers must be greater than 0");
+                System.out.println("số lượng của mảng không được nhỏ hơn 0");
             }
         } while (numbers < 1);
         arr = new int[numbers];
         for (int i = 0; i < arr.length ; i++) {
-            System.out.print("Enter element " + (i +1) +": ");
+            System.out.print("nhaaph phần tử " + (i +1) +": ");
             arr[i] = scanner.nextInt();
         }
         System.out.println("Old Array : " + Arrays.toString(arr));
-        System.out.print("Enter number push: ");
+        System.out.print("nhập số cần thêm: ");
         number = scanner.nextInt();
         do {
-            System.out.println("Enter element push: ");
+            System.out.println("nhập vị trí cần thêm: ");
             index = scanner.nextInt();
             if (index < 0 || index > (arr.length -1)){
-                System.out.print("index numbers must be greater than 0 and nhỏ hơn độ dài mảng");
+                System.out.print("vị trí khong duoc nho hon 0 va lon hon chieu dai");
             }
         }while (index < 0 || index > (arr.length -1));
-        System.out.println("New Array : " + push(arr,number,index));
+        System.out.println("New Array : " + them_phan_tu(arr,number,index));
     }
-    public static String push (int arr[],int number,int index){
+    public static String them_phan_tu (int arr[],int number,int index){
         int[] newArray = new int[arr.length + 1];
         for (int i = 0; i < newArray.length ; i++) {
             if(i < index){

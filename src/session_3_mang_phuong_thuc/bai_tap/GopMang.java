@@ -8,9 +8,9 @@ public class GopMang {
         int arrB[] = {10,9,8,7,6};
         System.out.println("Array 1 is: " + Arrays.toString(arrA));
         System.out.println("Array 2 is: " + Arrays.toString(arrB));
-        System.out.println("New Array: " + concat(arrA,arrB));
+        System.out.println("New Array: " + gop_mang(arrA,arrB));
     }
-    public static String concat(int arrA[], int arrB[]) {
+    public static String gop_mang(int arrA[], int arrB[]) {
         int arrPlus[] = new int[arrA.length + arrB.length];
         for (int i = 0; i < arrA.length; i++) {
             arrPlus[i] = arrA[i];
