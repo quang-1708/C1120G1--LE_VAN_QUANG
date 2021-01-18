@@ -14,7 +14,7 @@ public class TestResizeable {
         Circle circle = new Circle(4);
         System.out.println("dien tich hinh tron cu là: " +circle.getArea());
         circle.resize(persent);
-        System.out.println("dien tich hinh tron moi la: " + circle.getArea());
+    System.out.println("dien tich hinh tron moi la: " + circle.getArea());
 
         Ractangle ractangle = new Ractangle(5,10);
         System.out.println("dien tich hinh chu nhat cu: " + ractangle.getArea());

@@ -2,7 +2,7 @@ package sessions_1_introduction_to_java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class Calculator_Area {
+public class CalculatorArea {
     public static void main(String[] args) {
         float width;
         float length;

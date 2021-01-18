@@ -45,7 +45,7 @@ public class Squares extends Ractangle implements Colorable {
 
     @Override
     public void howToColor() {
-        
+        System.out.println("Color all four sides.");
 
     }
 }
