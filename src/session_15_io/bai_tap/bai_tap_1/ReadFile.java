@@ -9,15 +9,17 @@ public class ReadFile {
         FileReader fileReader;
         BufferedReader bufferReader;
         try {
-            fileReader = new FileReader("list.txt");
+            fileReader = new FileReader("source_file.txt");
             bufferReader = new BufferedReader(fileReader);
+            StringBuffer result = new StringBuffer();
             String line;
-            while ((line =bufferReader.readLine()) != null) {
-                System.out.println(line.split(" , "));
+            while ((line= bufferReader.readLine()) !=null){
+                result.append(line);
             }
+            System.out.println(result);
             bufferReader.close();
             fileReader.close();
-        } catch (IOException e) {
+        }catch (IOException e){
             e.printStackTrace();
         }
     }
